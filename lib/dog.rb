@@ -11,6 +11,7 @@ class Dog
 
     def name
       @name
+      @@all << name
     end
 
     def self.all

@@ -32,6 +32,6 @@ class Dog
     # end
 
     def self.print_all
-     self.all.each{|name| puts "#{name}"}
+     self.all.each{|name| puts "#{name.to_s}"}
     end
 end

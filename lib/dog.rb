@@ -1,12 +1,19 @@
+require 'pry'
+
 class Dog
 
   @@all = []
+
 
   attr_accessor :name
 
   def initialize(name)
     @name = name
     @@all << self
+  end
+
+  def name
+    @name
   end
 
   def self.all
@@ -18,11 +25,14 @@ class Dog
     @@all
   end
 
+  # Person.all.each do |person|
+  #   puts "#{person.name}"
+  # end
 
   def self.print_all
-    all.print each do |name| puts "#{name}!"
-    end
-    print_all
-   end
+    self.name.each do |name| name.to_s
+    puts dog.name
+  end
 
+  end
 end
